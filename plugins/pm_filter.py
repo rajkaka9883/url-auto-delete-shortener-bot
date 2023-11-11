@@ -449,7 +449,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃')
 
 
-elif lazyData.startswith("generate_stream_link"):
+    elif lazyData.startswith("generate_stream_link"):
         _, file_id = lazyData.split(":")
         try:
             user_id = query.from_user.id
